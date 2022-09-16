@@ -50,6 +50,8 @@ namespace Second
 
             moveDirection = cameraObject.forward * inputHandler.vertical;
             moveDirection += cameraObject.right * inputHandler.horizontal;  // your basic horizontal and vertical movements, but why the plus in second one
+            moveDirection.Normalize();
+            moveDirection.y = 0;
 
             float speed = movementSpeed;
             moveDirection *= speed; // pretty much same as standard input

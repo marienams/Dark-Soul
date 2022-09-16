@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//namespace Third
 public class Animationhandler : MonoBehaviour
 {
     public Animator anim;
@@ -104,3 +105,4 @@ public class Animationhandler : MonoBehaviour
         canRotate = false;
     }
 }
+
